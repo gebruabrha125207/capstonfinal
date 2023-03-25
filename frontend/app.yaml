@@ -1,4 +1,3 @@
-
 runtime: python
 service: frontend
 env: flex
@@ -8,9 +7,5 @@ entrypoint: streamlit run main.py --server.port $PORT
 runtime_config:
     python_version: 3
     
-manual_scaling:
-  instances: 1
-resource:
-  cpu: 1
-  memory_gb : 0.5
-  disk_sixe_gb : 10
+automatic_scaling:
+  max_num_instances: 1

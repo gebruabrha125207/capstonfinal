@@ -1,4 +1,5 @@
 
+
 SQLAlchemy==1.4.40
 Flask
 gunicorn==20.1.0
@@ -12,4 +13,4 @@ numpy
 plotly
 PyYAML
 requests
-
+gunicorn
