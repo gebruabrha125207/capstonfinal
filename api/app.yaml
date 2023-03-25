@@ -1,0 +1,15 @@
+runtime: python
+service: api
+env: flex
+
+entrypoint: gunicorn -b :$PORT api:app
+
+runtime_config:
+    python_version: 3
+    
+manual_scaling:
+  instances: 1
+resource:
+  cpu: 1
+  memory_gb : 0.5
+  disk_sixe_gb : 10
